@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    body {
+        display: flex;
+        background-color: #eefcf6;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    header {
+        font-family: sans-serif;
+        font-size: 24px;
+        line-height: 48px;
+        padding: 30px;
+    }
+    .container {
+        width: 780px;
+        height: 242px;
+        padding: 30px;
+        border: 1px solid #ededed;
+
+    }
+    .container--login {
+        background-color: white;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        display: flex;
+        justify-content: center;
+    }
+    .container--footer {
+        background-color: #132322;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        display: flex;
+    }
+    .credentials--block {
+        padding-top: 30px;
+        width: 292px;
+        height: 212px;
+        display: block;
+
+    }
+    .credentials--input {
+        width: 100%;
+        height: 18px;
+        padding: 10px 0px;
+        line-height: 48px;
+        border: 0px;
+        font-family: Arial, Helvetica, sans-serif;
+        border-bottom: 1px solid #ededed;
+    }
+    .credentials--button {
+        background-color: #3ddc91;
+        border-color: #3ddc91;
+        border: 4px solid #3ddc91;
+        border-radius: 4px;
+        width: 100%;
+        height:41px;
+        display: inline-block;
+        padding: 10px 30px;
+        margin-bottom: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: normal;
+        font-size: 16px;
+    }
+    .container--error {
+        width: 272px;
+        height: 45px;
+        padding: 10px 0px;
+    }
+    .content--footer {
+        width: 50%;
+        height: 100%;
+        color: #fff;
+        font-family: sans-serif;
+        font-size: 14px;
+        line-height: 24px;
+
+    }
+    h4 {
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: bold;
+        font-family: sans-serif;
+        color: #fff;
+        margin: 21.280px 0px;
+
+    } 
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        Swag Labs
+    </header>
+    <section class="container container--login">
+        <div class="credentials--block">
+            <input class="credentials--input" placeholder="Username"></input>
+            <input class="credentials--input" placeholder="Password"></input>
+            <div class="container--error"></div>
+            <input class="credentials--button" type="submit" value="Login"></input>
+        </div>
+    </section>
+    <section class="container container--footer">
+        <div class="content--footer">
+            <h4>Accepted usernames are:</h4>
+            standard_user<br>
+            locked_out_user<br>
+            problem_user<br>
+            performance_glitch_user<br>
+            error_user<br>
+            visual_user
+
+        </div>
+        <div class="content--footer">
+            <h4>Password for all users:</h4>
+            secret_sauce
+
+        </div>   
+    </section>
+</body>
+</html>
